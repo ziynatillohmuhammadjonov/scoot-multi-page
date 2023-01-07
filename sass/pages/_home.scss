@@ -1,0 +1,42 @@
+.main{
+    .hero{
+        background-image: url('../images/hero-bg-img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, left center;
+        .container{
+        padding: 15.2rem 0 15.2rem 16.5rem;
+        }
+    &__title{
+        color: #FFFFFF;
+        width: 50rem;
+        margin-bottom: 4rem;
+    }
+    
+    &__wrapper{
+        width: 40.5rem;
+        display: flex;  
+        margin-left: 9.05rem;
+        flex-direction: column;
+        position: relative;
+        img{
+            position: absolute;
+        }
+        
+    }
+    
+    &__img--line{
+        top: 50px;
+        left: -26rem;
+       
+    }  
+    &__img--arrow{
+        top: 50px;
+        right: -48.6rem;
+       
+    }  
+    &__descr{
+        margin-bottom: 4rem;
+    }
+    }  
+}

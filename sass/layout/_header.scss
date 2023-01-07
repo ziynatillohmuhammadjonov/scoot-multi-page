@@ -4,12 +4,14 @@
         bottom: 21px
         
     };
+
     background-color: #ffffff;
     width: 100%;
     position: fixed;
-    position: relative;
     .container{
-        z-index: 1;
+    position: relative;
+
+        z-index: 3;
         display: flex;
         align-items: center;
     }

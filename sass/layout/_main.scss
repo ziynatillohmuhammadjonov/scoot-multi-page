@@ -1,0 +1,7 @@
+.main{
+    margin-top: 9.6rem;
+    flex-grow: 1;
+    @include responsive(tablet){
+     margin-top: 6.4rem;   
+    }
+}
