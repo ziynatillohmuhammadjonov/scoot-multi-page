@@ -1,0 +1,17 @@
+.header{
+    padding: {
+        top: 22px;
+        bottom: 21px
+        
+    };
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    position: relative;
+    .container{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+}

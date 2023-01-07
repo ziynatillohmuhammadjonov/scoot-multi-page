@@ -1,0 +1,24 @@
+.btn {
+  padding: 1.4rem 4.7rem;
+  background-color: $yellow-color;
+  @include fontStyle(1.5rem, 1.67, normal, 700);
+  color: #ffffff;
+  border:3px solid transparent;
+  transition: border-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  border-color:  $yellow-color;
+  background-color: transparent;
+  color: $yellow-color;
+}
+.menu-btn{
+  background-color: transparent;
+  border: none;
+  display: none;
+  @include responsive (tablet){
+    display: block;
+    margin-right: 9.8rem;
+  }
+}

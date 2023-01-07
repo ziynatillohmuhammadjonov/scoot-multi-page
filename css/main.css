@@ -1,0 +1,225 @@
+/* colors */
+/* Typografy */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.67;
+  color: #495567;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: -2.14286px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -1.78571px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1.07143px;
+  line-height: 1.17;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* space-mono-700 - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/space-mono-v12-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+.wrapper .sitenav__link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.67;
+  color: #939caa;
+  font-family: "Space Mono", monospace;
+  transition: color 0.3s;
+}
+.wrapper .sitenav__link:hover {
+  color: #fcb72b;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    background-color: #495567;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    height: 100vh;
+    width: 25.6rem;
+    transition: left 0.3s;
+    padding-top: 12.8rem;
+    padding-bottom: 2.4rem;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+  }
+  .wrapper .sitenav__list {
+    flex-direction: column;
+  }
+  .wrapper .sitenav__link {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.39;
+    color: #e5ecf4;
+  }
+}
+
+.show-wrapper {
+  left: 0;
+}
+
+.header {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  position: relative;
+}
+.header .container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 1.4rem 4.7rem;
+  background-color: #fcb72b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.67;
+  color: #ffffff;
+  border: 3px solid transparent;
+  transition: border-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    margin-right: 9.8rem;
+  }
+}
+
+.cover {
+  width: 0;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: -2;
+  transition: width 0.3s;
+}
+
+.show-cover {
+  width: 100vw;
+}
+
+.logo-link .logo-img {
+  margin-right: 5.8rem;
+}
+@media screen and (max-width: 768px) {
+  .logo-link .logo-img {
+    width: 7.55rem;
+    height: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

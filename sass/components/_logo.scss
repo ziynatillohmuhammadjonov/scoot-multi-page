@@ -1,0 +1,10 @@
+.logo-link{
+    .logo-img{
+        margin-right: 5.8rem;
+        @include responsive(tablet){
+            width: 7.55rem;
+            height: 2rem;
+        }
+    }
+
+}

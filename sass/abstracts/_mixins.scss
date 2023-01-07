@@ -1,0 +1,21 @@
+@mixin fontStyle($size, $l-height, $l-spacing, $f-weight) {
+  font: {
+    size: $size;
+    weight: $f-weight;
+  }
+  letter-spacing: $l-spacing;
+  line-height: $l-height;
+}
+@mixin responsive ($size) {
+  @if $size==tablet {
+    @media screen and (max-width:768px) {
+      @content;
+    }
+  }
+  @else if $size==mobile{
+    @media screen and (max-width:376px) {
+      @content;      
+    }
+  }
+  
+}
