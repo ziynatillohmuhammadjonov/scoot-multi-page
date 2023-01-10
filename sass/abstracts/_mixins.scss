@@ -7,13 +7,25 @@
   line-height: $l-height;
 }
 @mixin responsive ($size) {
-  @if $size==tablet {
+  @if $size==desktop{
+    @media screen  and (max-width:1150px){
+      @content;
+      
+    }
+  }
+  @else if $size==tablet {
     @media screen and (max-width:768px) {
       @content;
     }
   }
+  @else if $size == intermediate{
+    @media screen and (max-width: 625px) {
+      @content;
+    }
+  }
   @else if $size==mobile{
-    @media screen and (max-width:376px) {
+  
+    @media screen and (max-width:576px) {
       @content;      
     }
   }

@@ -20,15 +20,14 @@
     }
     @include responsive(tablet){
         background-color: $dark-navy-color;
-        display: inline-flex;
+        // display: inline-flex;
         flex-direction: column;
         align-items: start;
-        position: absolute;
-        z-index: 5;
-        top: 5rem;
-        left: -100%;
+        position: fixed;
+        z-index: -2;
+        top: 0;
         bottom: 0;
-        // height: 100vh;
+        left: -100%;
         width: 25.6rem;
         transition: left 0.3s;
         padding: {
@@ -37,6 +36,7 @@
             right: 3.2rem;
             left: 3.2rem;
         };
+
         .sitenav{
 
             &__list{
@@ -48,10 +48,12 @@
             }
             
         }
+        background-color: #333A44;
     }
 }
 
 .show-wrapper{
         // display: inline-flex;
         left: 0;
+
 }
