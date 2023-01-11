@@ -177,18 +177,56 @@ h4 {
 }
 .footer .container {
   display: flex;
+  justify-content: space-between;
 }
-
-.social {
+.footer .sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+.footer .sitenav__link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.67;
+  color: #939caa;
+  font-family: "Space Mono", monospace;
+  transition: color 0.3s;
+}
+.footer .sitenav__link:hover {
+  color: #fcb72b;
+}
+.footer .social {
   display: flex;
   align-items: center;
   gap: 2.4rem;
 }
-.social__item {
+.footer .social__item {
   transition: fill 0.3s;
 }
-.social__item:hover svg path {
+.footer .social__item:hover svg path {
   fill: #e5ecf4;
+}
+@media screen and (max-width: 625px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .logo-link {
+    margin-bottom: 4.14rem;
+  }
+  .footer .logo-link .logo-img {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .sitenav {
+    margin-bottom: 8.5rem;
+  }
+  .footer .sitenav__list {
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+  }
 }
 
 .main {
@@ -198,6 +236,48 @@ h4 {
 @media screen and (max-width: 768px) {
   .main {
     margin-top: 6.4rem;
+  }
+}
+.main .signup {
+  background-color: #495567;
+  background-image: url("../../images/sign-up-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.main .signup .container {
+  padding-top: 10.2rem;
+  padding-bottom: 10.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .signup__title {
+  margin-right: 32rem;
+}
+.main .signup__wrapper {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+@media screen and (max-width: 1150px) {
+  .main .signup .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main .signup__title {
+    text-align: center;
+    width: 45.7rem;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .signup__title {
+    width: 31.1rem;
+    font-size: 3.2rem;
+  }
+  .main .signup__img {
+    width: 13rem;
   }
 }
 
@@ -374,13 +454,13 @@ h4 {
 }
 @media screen and (max-width: 768px) {
   .main .order {
+    background-image: none;
     display: grid;
     justify-content: center;
   }
   .main .order .container {
     padding-top: 12.2rem;
     padding-bottom: 9.2rem;
-    background-image: none;
     background-image: url("../images/order-bg-img-tablet.svg");
     background-repeat: no-repeat;
     background-position: top left 6.5rem;
@@ -447,7 +527,7 @@ h4 {
   position: relative;
 }
 .main .service .container {
-  padding-top: 20rem;
+  padding-top: 12.2rem;
   padding-bottom: 32.9rem;
   color: #495567;
 }
@@ -480,6 +560,9 @@ h4 {
   position: absolute;
   width: 100rem;
 }
+.main .service__img_mobile {
+  display: none;
+}
 .main .service__title {
   margin-bottom: 2.4rem;
 }
@@ -490,4 +573,89 @@ h4 {
   line-height: 1.67;
   color: #939caa;
   margin-bottom: 4rem;
+}
+.main .service__btn {
+  display: inline-block;
+}
+@media screen and (max-width: 1150px) {
+  .main .service .container {
+    padding-top: 8rem;
+    padding-bottom: 25rem;
+  }
+  .main .service__list {
+    gap: 15rem;
+  }
+  .main .service__img {
+    width: 75rem;
+  }
+  .main .service__info {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .service .container {
+    padding-top: 55rem;
+    padding-bottom: 10.4rem;
+  }
+  .main .service__list {
+    gap: 62.9rem;
+  }
+  .main .service__item {
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  }
+  .main .service__img {
+    width: 100rem;
+    top: calc((150% + 5.6rem) * -1);
+  }
+  .main .service__item:nth-child(2) img {
+    top: calc((170% + 5.6rem) * -1);
+  }
+  .main .service__item:nth-child(3) img {
+    top: calc((200% + 5.6rem) * -1);
+  }
+  .main .service__info {
+    width: auto;
+  }
+}
+@media screen and (max-width: 625px) {
+  .main .service__img {
+    width: 90rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .service .container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .main .service__info {
+    width: 31.1rem;
+  }
+  .main .service__list {
+    gap: 12rem;
+  }
+  .main .service__img {
+    display: none;
+  }
+  .main .service__img_mobile {
+    display: block;
+    width: 31.1rem;
+    margin-bottom: 5.6rem;
+  }
+  .main .service__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .service__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: -1.42857px;
+    line-height: 1;
+    margin-bottom: 3.2rem;
+  }
+  .main .service__descr {
+    margin-bottom: 3.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

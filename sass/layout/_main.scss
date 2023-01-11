@@ -4,4 +4,49 @@
     @include responsive(tablet){
      margin-top: 6.4rem;   
     }
+    .signup{
+        background-color: $dark-navy-color;
+        background-image: url('../../images/sign-up-bg.svg');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+
+        .container{
+            padding:{
+                top: 10.2rem;
+                bottom: 10.2rem
+            };
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__title{
+            margin-right: 32rem;
+        }
+        &__wrapper{
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+        }
+        @include responsive(desktop){
+            .container{
+                flex-direction: column;
+                justify-content: center;
+            }
+            &__title{
+                text-align: center;
+                width: 45.7rem;
+                margin-right: 0;
+                margin-bottom: 4rem;
+            }
+        }
+        @include responsive(mobile){
+            &__title{
+                width: 31.1rem;
+                font-size: 3.2rem;
+            }
+            &__img{
+                width: 13rem;
+            }
+        }
+    }
 }

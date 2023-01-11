@@ -103,12 +103,12 @@
             @include fontStyle(1.5rem, 1.67, normal, 400)
         }
         @include responsive (tablet){
+            background-image: none;
             .container{
                 padding: {
                     top: 12.2rem;
                     bottom: 9.2rem;
                 };
-            background-image: none;
             background-image: url('../images/order-bg-img-tablet.svg');
             background-repeat: no-repeat;
             background-position: top left 6.5rem;
@@ -178,7 +178,7 @@
         position: relative;
         .container{
             padding: {
-                top: 20rem;
+                top: 12.2rem;
                 bottom: 32.9rem;
             };
             color: $dark-navy-color;
@@ -212,6 +212,9 @@
         &__img{
             position: absolute;
             width: 100rem;
+            &_mobile{
+                display: none;
+            }
         }
         &__title{
             margin-bottom: 2.4rem;
@@ -221,5 +224,99 @@
             color: $dim-grey-color;
             margin-bottom: 4rem;    
         }
-    }
+        &__btn{
+            display: inline-block;
+        }
+        @include responsive(desktop){
+        .container{
+            padding: {
+                top:8rem;
+                bottom: 25rem;
+            };
+        }
+        &__list{
+            gap: 15rem;
+        }
+        &__img{
+            width: 75rem;
+           
+        }
+        &__info{
+            width: 30rem;
+        }
+        }
+        @include responsive(tablet){
+            .container{
+                padding: {
+                    top:55rem;
+                    bottom: 10.4rem;
+                };
+            }
+            &__list{
+                gap: 62.9rem;
+            }
+            &__item{
+                flex-direction: column;
+                position: relative;
+                text-align: center;
+            }
+            &__img{
+                width: 100rem;
+                top: calc(((150% + 5.6rem)*-1));
+            }
+            &__item:nth-child(2) img{
+                top: calc(((170% + 5.6rem)*-1));
+            }
+            &__item:nth-child(3) img{
+                top: calc(((200% + 5.6rem)*-1));
+            }
+            &__info{
+                width: auto;
+            }
+        }
+        @include responsive(intermediate){
+            &__img{
+                width: 90rem;
+            }
+        }
+        @include responsive(mobile){
+            .container{
+                padding: {
+                    top:12rem;
+                    bottom: 12rem;
+                    // right: 3.2rem;
+                    // left: 3.2rem;
+                };
+            }
+            &__info{
+                width: 31.1rem;
+            }
+            &__list{
+                gap: 12rem;
+            }
+            &__img{
+                display: none;
+                &_mobile{
+                    display: block;
+                    width: 31.1rem;
+                    margin-bottom: 5.6rem;
+                }
+            }
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            &__title{
+                @include fontStyle(3.2rem, 1, -1.42857px, 700);
+                margin-bottom: 3.2rem;
+            }
+            &__descr{
+                margin-bottom: 3.2rem;
+
+            }
+           
+        }
+}
 }
