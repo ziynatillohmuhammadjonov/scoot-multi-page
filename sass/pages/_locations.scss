@@ -1,0 +1,87 @@
+.main{
+    .maps{
+        .container {
+            color: $dark-navy-color;
+            padding: {
+                top: 12rem;
+                bottom: 12rem;
+            };
+        }
+        &__list{
+            display: none;
+        }
+    &__img{
+        margin-bottom: 12rem;
+        width: 100%;
+        &_mobile{
+            display: none;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__inwrapper{
+        width: 44.5rem;
+    }
+    &__title{
+        width: 35.1rem;
+    }
+    &__descr{
+        color: $dim-grey-color;
+    }
+    @include responsive(tablet){
+        text-align: center;
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem;
+        }
+    }
+    @include responsive(mobile){
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: {
+                top: 7.2rem;
+                bottom: 7.2rem;
+            };
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            margin-bottom: 7.2rem;
+        }
+        &__item{
+            font-family: $heading-font-family;
+            background-color: $light-yellow-color;
+            padding: {
+                top:2.2rem;
+                bottom: 2.5rem;
+            };
+            @include fontStyle(2.4rem, 1.17,  -1.07143px, 700)
+        }
+        &__inwrapper{
+            width: 28rem;
+        }
+        &__title{}
+        &__img{
+            display: none;
+            &_mobile{
+                display: block;
+                margin-bottom: 4rem;
+            }
+        }
+        &__title{
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            width: auto;
+        }
+        
+    }
+    }
+}
