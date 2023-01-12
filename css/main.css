@@ -613,7 +613,7 @@ h4 {
   width: 44.5rem;
 }
 .main .service__img {
-  position: relative;
+  position: absolute;
 }
 .main .service__img_mobile {
   display: none;
@@ -661,7 +661,6 @@ h4 {
     text-align: center;
   }
   .main .service__img {
-    width: 100rem;
     top: calc((150% + 5.6rem) * -1);
   }
   .main .service__item:nth-child(2) img {
@@ -869,6 +868,26 @@ h4 {
   }
 }
 
+.main .careers-hero {
+  background-image: url("../../images/careers-hero-img.png");
+  background-size: contain;
+}
+.main .careers-hero .container {
+  padding: 7.2rem 0;
+}
+.main .careers-hero .hero__title {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .main .careers-hero {
+    background-image: url("../../images/careers-hero-mobile.png");
+    background-size: cover;
+  }
+  .main .careers-hero .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
 .main .careers-service .container {
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -880,6 +899,15 @@ h4 {
 .main .careers-service .service__info {
   width: auto;
 }
+@media screen and (max-width: 768px) {
+  .main .careers-service .service__img {
+    order: -1;
+    width: auto;
+  }
+  .main .careers-service .service__item img {
+    right: -2rem;
+  }
+}
 @media screen and (max-width: 576px) {
   .main .careers-service .container {
     padding-top: 7.2rem;
@@ -888,5 +916,58 @@ h4 {
   .main .careers-service .service__item:nth-child(odd) img {
     position: relative;
     right: 0;
+  }
+}
+.main .xizmatlar .container {
+  color: #495567;
+  margin-bottom: 16rem;
+}
+.main .xizmatlar__list {
+  gap: 2.4rem;
+}
+.main .xizmatlar__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f5f9;
+  padding-top: 3.2rem;
+  padding-right: 6.4rem;
+  padding-bottom: 3.5rem;
+  padding-left: 4rem;
+}
+.main .xizmatlar__item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.main .xizmatlar__wrapper {
+  flex-direction: column;
+  min-width: 25rem;
+}
+.main .xizmatlar__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1.07143px;
+  line-height: 1.17;
+}
+@media screen and (max-width: 576px) {
+  .main .xizmatlar {
+    text-align: center;
+  }
+  .main .xizmatlar__item {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5.6rem;
+    padding-left: 3.2rem;
+    padding-bottom: 3.2rem;
+    padding-right: 3.2rem;
+  }
+  .main .xizmatlar__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  .main .xizmatlar__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .xizmatlar__wrapper {
+    margin-bottom: 1.6rem;
   }
 }/*# sourceMappingURL=main.css.map */

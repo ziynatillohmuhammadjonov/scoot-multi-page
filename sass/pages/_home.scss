@@ -210,7 +210,7 @@
             width: 44.5rem;
         }
         &__img{
-            position: relative;
+            position: absolute;
             &_mobile{
                 display: none;
             }
@@ -260,7 +260,7 @@
                 text-align: center;
             }
             &__img{
-                width: 100rem;
+                // width: 100rem;
                 top: calc(((150% + 5.6rem)*-1));
             }
             &__item:nth-child(2) img{

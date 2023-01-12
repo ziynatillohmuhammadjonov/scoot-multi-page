@@ -1,4 +1,24 @@
 .main{
+    .careers-hero{
+        background-image: url('../../images/careers-hero-img.png');
+        background-size: contain;
+        .container{
+            padding: 7.2rem 0;
+        }
+        .hero__title{
+            margin-bottom: 0;
+        }
+        @include responsive(mobile){
+            background-image: url('../../images/careers-hero-mobile.png');
+            background-size: cover;
+            .container{
+                padding: {
+                    top: 5rem;
+                    bottom: 5rem;
+                };
+            }
+        }
+    }
     .careers-service{
         .container{
             padding: {
@@ -12,6 +32,15 @@
         }
         .service__info {
             width: auto;
+        }
+        @include responsive(tablet){
+           .service__img{
+               order: -1;
+               width: auto;
+            }
+            .service__item img{
+               right: -2rem;
+           }
         }
         @include responsive(mobile){
             .container{
@@ -27,6 +56,63 @@
     }
     .careers-values{
         
+    }
+}
+.xizmatlar{
+    .container{
+        color: $dark-navy-color;
+        margin-bottom: 16rem;
+    }
+    &__list{
+        gap: 2.4rem;
+
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $snow-color;
+        padding: {
+            top: 3.2rem;
+            right: 6.4rem;
+            bottom: 3.5rem;
+            left: 4rem;
+        };
+    }
+    &__item:not(:last-child){
+        margin-bottom: 2.4rem;
+    }
+    &__wrapper{
+        flex-direction: column;
+        // width: 100%;
+        min-width: 25rem;
+    }
+    &__title{
+        @include fontStyle(2.4rem, 1.17, -1.07143px,700)
+    }
+    @include responsive(mobile){
+        text-align: center;
+        &__item{
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: {
+                top:5.6rem;
+                left: 3.2rem;
+                bottom: 3.2rem;
+                right: 3.2rem;
+            };
+
+        }
+        &__item:not(:last-child){
+            margin-bottom: 1.6rem;
+        }
+        &__title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__wrapper{
+            margin-bottom: 1.6rem;
+        }
     }
 }
 }
