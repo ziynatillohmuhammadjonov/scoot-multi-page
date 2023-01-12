@@ -210,8 +210,7 @@
             width: 44.5rem;
         }
         &__img{
-            position: absolute;
-            width: 100rem;
+            position: relative;
             &_mobile{
                 display: none;
             }
@@ -318,5 +317,5 @@
             }
            
         }
-}
+    }
 }

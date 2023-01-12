@@ -613,8 +613,7 @@ h4 {
   width: 44.5rem;
 }
 .main .service__img {
-  position: absolute;
-  width: 100rem;
+  position: relative;
 }
 .main .service__img_mobile {
   display: none;
@@ -867,5 +866,27 @@ h4 {
   }
   .main .faqs__item:not(:last-child) {
     margin-bottom: 4.8rem;
+  }
+}
+
+.main .careers-service .container {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.main .careers-service .service__item img {
+  position: relative;
+  right: -13rem;
+}
+.main .careers-service .service__info {
+  width: auto;
+}
+@media screen and (max-width: 576px) {
+  .main .careers-service .container {
+    padding-top: 7.2rem;
+    padding-bottom: 12rem;
+  }
+  .main .careers-service .service__item:nth-child(odd) img {
+    position: relative;
+    right: 0;
   }
 }/*# sourceMappingURL=main.css.map */

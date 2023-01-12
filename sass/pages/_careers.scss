@@ -1,0 +1,32 @@
+.main{
+    .careers-service{
+        .container{
+            padding: {
+                top: 12rem;
+                bottom: 12rem;
+            };
+        }
+        .service__item img {
+            position: relative;
+            right: -13rem;
+        }
+        .service__info {
+            width: auto;
+        }
+        @include responsive(mobile){
+            .container{
+                padding: {
+                    top: 7.2rem;
+                    bottom: 12rem;
+                };
+            }
+            .service__item:nth-child(odd) img {
+                position: relative;
+                right: 0;
+        }
+    }
+    .careers-values{
+        
+    }
+}
+}
