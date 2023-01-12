@@ -1,15 +1,30 @@
 .main{
     .about-hero{
         background-image: url('../../images/about-hero.jpg');
-        background-size: contain;
+        background-size: cover;
         .container{
             padding: 7.2rem 0;
         }
         .hero__title{
             margin-bottom: 0;
         }
+        @include responsive(mobile){
+            background-image: url('../../images/abdout-hero-m-bg.jpg');
+            .container{
+                padding: {
+                    top: 5rem;
+                    bottom: 5rem;
+                };
+            }
+        }
     }
     .about-service{
+        .container{
+            padding: {
+                top: 24.5rem;
+                bottom: 24.5rem;
+            };
+        }
         .service__img{
             width: auto;
         }
@@ -25,5 +40,132 @@
         .service__item:nth-child(even) {
             justify-content: flex-end;
         }
+        @include responsive (desktop){
+            .service__img{
+                width: 60rem;
+            }
+        }
+        @include responsive(tablet){
+            .container{
+                padding: {
+                    top: 14.4rem;
+                };
+                position: relative;
+            }
+            .service__list{
+                gap: 12rem;
+            }
+            .service__img {
+                order: -1;
+                width: auto;
+                position: relative;
+                margin-bottom: 5.6rem;
+            }
+            .service__item:nth-child(even) img {
+                left: -51px;
+            }
+        }
+        @include responsive(mobile){
+            .container{
+                padding: {
+                    top: 7.2rem;
+                     bottom: 12rem;
+                };
+            }
+            .service__img_mobile{
+                display: block;
+            }
+        }
+    }
+    .values{
+        .container{
+            padding: {
+                bottom: 12rem;
+            } ;
+            color: $dark-navy-color;
+            text-align: center;
+        }
+        &__list{
+            display: flex;
+            gap: 3rem;
+        }
+        &__img{
+            margin-bottom: 3.2rem;
+        }
+        &__item{
+            &_title{
+                @include fontStyle(2.4rem,1.17,-1.07143px,700);
+                margin-bottom:2.7rem;
+            }
+        }
+        &__descr{
+            color: $dim-grey-color;
+        }
+        @include responsive(desktop){
+            &__list{
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                align-items: center;
+                justify-content: center;
+            }
+            &__item{
+                width: 35rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        @include responsive(mobile){
+            &__title{
+                font-size: 3.2rem;
+                
+            }
+            &__item{
+                width: 31.1rem;
+            }
+        }
+    }
+    .faqs{
+        .container{
+            color: $dark-navy-color;
+            margin-bottom: 16rem;
+        }
+        &__info{
+            width: 35rem;
+        }
+        &__item{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 6.4rem;
+    }
+    &__list{
+        padding: 0;
+        
+    }
+    &__title{
+        margin-bottom: 6.4rem;
+        text-align: center;
+
+    }
+    @include responsive(mobile){
+        .container{
+            margin-bottom: 12rem;
+        }
+        &__item{
+            gap: 3.2rem;
+        }
+        &__info{
+            font-size: 2.4rem;
+            line-height: 1.17;
+            text-align: center;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 4.8rem;
+        }
+    }
     }
 }

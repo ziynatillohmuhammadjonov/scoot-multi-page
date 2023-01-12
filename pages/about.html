@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>About</title>
 </head>
@@ -33,16 +34,18 @@
         </div>
       </header> 
       <main class="main">
+        <!-- Hero -->
         <section class="hero about-hero">
             <div class="container">
                 <h1 class="hero__title">About</h1>
             </div>
         </section>
+        <!-- Valus -->
         <section class="service about-service">
             <div class="container">
                 <ul class="service__list">
                     <li class="service__item"> 
-                      <img src="./images/easy-to-use-mobile.png" alt="Mobile" class="service__img_mobile">
+                      <img src="../images/easy-to-use-mobile.png" alt="Mobile" class="service__img_mobile">
                       <div class="service__info">
                       <h2 class="service__title">Mobility for the digital era</h2>
                       <p class="service__descr">Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.</p>
@@ -50,7 +53,7 @@
                       <img src="../images/digital-area-img.png" alt="digital-area-img" class="service__img">
                   </li>
                     <li class="service__item">
-                      <img src="./images/coming-city-mobile.png" alt="city" class="service__img_mobile">
+                      <img src="../images/coming-city-mobile.png" alt="city" class="service__img_mobile">
                       <div class="service__info">
                         <h2 class="service__title">Better urban living</h2>
                         <p class="service__descr">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.</p>
@@ -60,6 +63,121 @@
                   </ul>
             </div>
         </section>
+        <section class="values">
+          <div class="container">
+            <h2 class="values__title">Our values</h2>
+            <ul class="values__list">
+              <li class="values__item">
+                <img src="../images/tech-img.png" alt="tech-img" class="values__img">
+                <h3 class="values__item_title">Our tech</h3>
+                <p class="values__descr">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+              </li>
+              <li class="values__item">
+                <img src="../images/integry-img.png" alt="integry-img" class="values__img">
+                <h3 class="values__item_title">Our integrity</h3>
+                <p class="values__descr">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+              </li>
+              <li class="values__item">
+                <img src="../images/community-img.png" alt="community-img" class="values__img">
+                <h3 class="values__item_title">Our community</h3>
+                <p class="values__descr">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="faqs">
+          <div class="container">
+            <h2 class="faqs__title">FAQs</h2>
+            <ul class="faqs__list">
+              <li class="faqs__item">
+                <h3 class="faqs__info">How it works</h3>
+                <div class="faqs__accordion">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          How do I download the app?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Can I find a nearby Scoots?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Do I need a license to ride?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="faqs__item">
+                <h3 class="faqs__info">Safe driving</h3>
+                <div class="faqs__accordion">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Should I wear a helmet?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          How about the rules & regulations?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What if I damage my Scoot?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Sign up -->
         <section class="signup">
             <div class="container">
               <h2 class="signup__title">Sign up and Scoot off today</h2>
@@ -94,6 +212,7 @@
       </div>
       </footer>
     <div class="cover"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
       <script src="../js/main.js"></script>
 </body>
 </html>

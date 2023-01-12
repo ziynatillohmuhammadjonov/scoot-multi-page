@@ -356,6 +356,47 @@ h4 {
   }
 }
 
+.faqs__accordion {
+  width: 70rem;
+}
+.faqs__accordion .accordion .accordion-button {
+  color: #495567;
+  background-color: #f2f5f9;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.faqs__accordion .accordion-body {
+  background-color: #f2f5f9;
+  color: #495567;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.faqs__accordion .accordion .accordion-button:hover {
+  background-color: #fff4df;
+}
+.faqs__accordion .accordion-body:hover {
+  background-color: #fff4df;
+}
+.faqs__accordion .accordion-button {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1.07143px;
+  line-height: 1.17;
+  padding-left: 4rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  padding-right: 4rem;
+}
+@media screen and (max-width: 576px) {
+  .faqs__accordion .accordion .accordion-button {
+    font-size: 1.8rem;
+    line-height: 1.33;
+  }
+  .faqs__accordion .accordion-body {
+    padding-left: 3.2rem;
+    padding-right: 2.8rem;
+  }
+}
+
 .main .hero {
   background-image: url("../images/hero-bg-img.jpg");
   background-size: cover;
@@ -677,13 +718,26 @@ h4 {
 
 .main .about-hero {
   background-image: url("../../images/about-hero.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 .main .about-hero .container {
   padding: 7.2rem 0;
 }
 .main .about-hero .hero__title {
   margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .main .about-hero {
+    background-image: url("../../images/abdout-hero-m-bg.jpg");
+  }
+  .main .about-hero .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+.main .about-service .container {
+  padding-top: 24.5rem;
+  padding-bottom: 24.5rem;
 }
 .main .about-service .service__img {
   width: auto;
@@ -699,4 +753,119 @@ h4 {
 }
 .main .about-service .service__item:nth-child(even) {
   justify-content: flex-end;
+}
+@media screen and (max-width: 1150px) {
+  .main .about-service .service__img {
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .about-service .container {
+    padding-top: 14.4rem;
+    position: relative;
+  }
+  .main .about-service .service__list {
+    gap: 12rem;
+  }
+  .main .about-service .service__img {
+    order: -1;
+    width: auto;
+    position: relative;
+    margin-bottom: 5.6rem;
+  }
+  .main .about-service .service__item:nth-child(even) img {
+    left: -51px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .about-service .container {
+    padding-top: 7.2rem;
+    padding-bottom: 12rem;
+  }
+  .main .about-service .service__img_mobile {
+    display: block;
+  }
+}
+.main .values .container {
+  padding-bottom: 12rem;
+  color: #495567;
+  text-align: center;
+}
+.main .values__list {
+  display: flex;
+  gap: 3rem;
+}
+.main .values__img {
+  margin-bottom: 3.2rem;
+}
+.main .values__item_title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1.07143px;
+  line-height: 1.17;
+  margin-bottom: 2.7rem;
+}
+.main .values__descr {
+  color: #939caa;
+}
+@media screen and (max-width: 1150px) {
+  .main .values__list {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .values__item {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .values__title {
+    font-size: 3.2rem;
+  }
+  .main .values__item {
+    width: 31.1rem;
+  }
+}
+.main .faqs .container {
+  color: #495567;
+  margin-bottom: 16rem;
+}
+.main .faqs__info {
+  width: 35rem;
+}
+.main .faqs__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.main .faqs__item:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+.main .faqs__list {
+  padding: 0;
+}
+.main .faqs__title {
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .main .faqs .container {
+    margin-bottom: 12rem;
+  }
+  .main .faqs__item {
+    gap: 3.2rem;
+  }
+  .main .faqs__info {
+    font-size: 2.4rem;
+    line-height: 1.17;
+    text-align: center;
+  }
+  .main .faqs__item:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
