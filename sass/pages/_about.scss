@@ -1,0 +1,29 @@
+.main{
+    .about-hero{
+        background-image: url('../../images/about-hero.jpg');
+        background-size: contain;
+        .container{
+            padding: 7.2rem 0;
+        }
+        .hero__title{
+            margin-bottom: 0;
+        }
+    }
+    .about-service{
+        .service__img{
+            width: auto;
+        }
+        .service__item{
+            justify-content: space-between;
+        }
+        .service__item:nth-child(odd) img{
+            right: 0;
+        }
+        .service__item:nth-child(even) img{
+            left: 0;
+        }
+        .service__item:nth-child(even) {
+            justify-content: flex-end;
+        }
+    }
+}
